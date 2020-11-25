@@ -1,114 +1,55 @@
-/*css 初始化 */
-
-html,
-body,
-ul,
-li,
-ol,
-dl,
-dd,
-dt,
-p,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-form,
-fieldset,
-legend,
-img,
-input {
-    margin: 0;
-    padding: 0;
-    /*清除元素的内外边距*/
+﻿/*样式初始化*/
+html, body, div, span, object, iframe,h1, h2, 
+h3, h4, h5, h6, p, blockquote, pre,abbr, address, cite, code,del, dfn, 
+em, img, ins,kbd, q, samp,small, strong, sub, sup, var,b, i,dl, dt, dd, 
+ol, ul, li,fieldset, form, label, legend,table, caption, tbody, 
+tfoot,thead,tr, th, td,article, aside, canvas, details, figcaption, 
+figure, footer, header, hgroup, menu, nav, section, summary,time, mark, 
+audio, video,a,input,textarea,hr,dir{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;    /*将标准的盒子模型转换成IE6的盒子模型*/
+}
+ul{
+	list-style: none;
 }
 
-fieldset,
-img,
-input,
-button {
-    border: none;
-    padding: 0;
-    margin: 0;
-    outline-style: none;
-    /*外面环绕线*/
+/* 链接 */
+/* 去掉下换线
+去掉IE 10+ 点击时的灰色背景 */
+a{
+	text-decoration: none;
+}
+input,textarea{
+	outline: none;
+}
+img{
+	border: none;    /* IE7以下的img标签会有边框  */
+}
+/*修改input中提示文字的颜色*/
+input::-webkit-input-placeholder{
+    color:#ccc;
+}
+input::-moz-placeholder{   /* Mozilla Firefox 19+ */
+    color:#ccc;
+}
+input:-ms-input-placeholder{  /* Internet Explorer 10-11 */ 
+    color:#ccc;
+}
+input:-moz-placeholder{    /* Mozilla Firefox 4 to 18 */
+    color:#ccc;
 }
 
-ul,
-ol {
-    list-style: none;
+/*清除浮动的伪类*/
+.myclear::after{
+	content: "";
+	display: block;
+	clear: both;
+	overflow: hidden;
+	height: 0;
+}
+.myclear{
+	zoom: 1;
 }
 
 
-/*去掉原样式中的小黑点*/
-
-img {
-    vertical-align: top;
-    border: 0;
-}
-
-table {
-    border-collapse: collapse;
-    /*合并外连线*/
-}
-
-body {
-    font: 12px/150% "microsoft yahei";
-    color: #000;
-    background: #fff;
-}
-
-.clearfix:after {
-    content: "";
-    display: table;
-    clear: both;
-    height: 0;
-    line-height: 0;
-    visibility: hidden;
-}
-
-a {
-    color: #444;
-    text-decoration: none;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-    font-weight: normal;
-}
-
-s,
-i,
-em {
-    font-style: normal;
-    text-decoration: none;
-}
-
-.w {
-    /*版心 提取 */
-    width: 1226px;
-    margin: 0 auto;
-}
-
-.w_left {
-    width: 290px;
-    float: left;
-    margin-right: 15px;
-}
-
-.w_center {
-    width: 590px;
-    float: left;
-}
-
-.w_right {
-    width: 290px;
-    float: left;
-    margin-left: 15px;
-}

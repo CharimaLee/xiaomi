@@ -28,7 +28,7 @@ var xiaomi = {
 			error.style.display = 'none';
 		}
     },
-
+    
     //验证码验证
     verification(){
         let phone = sessionStorage.getItem("phone");
@@ -156,9 +156,9 @@ var xiaomi = {
         sessionStorage.setItem("idaccount", num);
 
         btn.onclick = function(){
-            window.location.href = 'login.html';
+            window.location.href = '../pages/denglu.html';
         }
-    }
+    } 
     
 }
 

@@ -107,7 +107,12 @@ header .top .right .gouwuche{margin:0 20px;background: #424242;width: 120px;text
 
 
 /*banner_y*/
-.banner_y{width:1226px;height:460px;background: url('../img/banner2.jpg') no-repeat;}
+.banner_y{width:1226px;height:460px;}
+.banner_y .imgfloatright {width: 992px;float: right;overflow: hidden;}
+
+
+
+
 .banner_y .nav{width: 234px;height: 460px;background: rgb(12,12,19);}
 .banner_y .nav ul{padding: 20px 0;position:relative;}
 .banner_y .nav ul li{display: block;width: 174px;height: 40px;line-height:40px;font-size: 14px;padding: 0 30px;}

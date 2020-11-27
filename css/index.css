@@ -86,7 +86,7 @@ header .top .left ul li a:hover{color:#fff;}
 header .top .right ul li{float: left;font-size: 12px;color: #ccc;}
 header .top .right ul li a{display:block;padding:0 8px;font-size: 12px;font-family: Times New Roman;color: #b0b0b0;}
 header .top .right ul li a:hover{color:#fff;}
-header .top .right .gouwuche a{color:#fff;}
+header .top .right .gouwuche a{color:#fff;font-size: 15px;}
 header .top .right .gouwuche{margin:0 20px;background: #424242;width: 120px;text-align: center;font-size: 12px;cursor:pointer;background: #ff6700;color: #fff;}
 
 
